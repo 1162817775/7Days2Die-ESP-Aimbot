@@ -14,7 +14,7 @@ namespace Game_7D2D.Modules
         private static Vector3 eb_righthand, eb_hips, eb_leftupleg, eb_leftleg, eb_leftfoot, eb_rightupleg, eb_rightleg, eb_rightfoot;
         public static void esp_drawBox(EntityEnemy entity, Color color)
         {
-            Camera = Hacks.MainCamera;
+            Camera = Camera.main;
             Vector3 entity_head = entity.transform.position;
             Vector3 entity_feet = new Vector3(entity_head.x, entity_head.y + entity.height, entity_head.z);
 
