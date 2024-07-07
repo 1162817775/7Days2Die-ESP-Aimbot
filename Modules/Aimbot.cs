@@ -18,7 +18,7 @@ namespace Game_7D2D.Modules
         private static Camera Camera;
         public static void AimAssist()
         {
-            Camera = Hacks.MainCamera;
+            Camera = Camera.main;
             //Aimbot is semi copy and pasted
             float minDist = 9999f;
             
